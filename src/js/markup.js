@@ -10,7 +10,7 @@ function renderBreeds(info, elem) {
 
 function renderCat(info, elem) {
     const markup = info.map(({ breeds: [{ name, temperament, description }], url }) => {
-        return `<img class="cat-img" src="${url}" alt="${name}" />
+        return `<img class="cat-img" height='350px' width='400px' src="${url}" alt="${name}" />
       <div class="cat-info-box">
         <h2 class="cat-name">${name}</h2>
         <p class="cat-subscription">${description}</p>
